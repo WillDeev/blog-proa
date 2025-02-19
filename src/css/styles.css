@@ -1,0 +1,108 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilizando o Menu Lateral */
+#sidebar {
+    background-color: #fff;
+    color: #000;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+#sidebar ul li {
+    margin: 15px 0;
+}
+#sidebar ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Container principal para notícias */
+.container-noticias-principais {
+    margin-left: 270px; /* Para não ficar sob o menu */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.noticias {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 300px;
+}
+.noticias img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.headline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Seção 'Mais Notícias' */
+.maisnoticias {
+    margin-left: 270px;
+    padding: 20px;
+}
+.new-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+.news-item-small img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Seção Lista de Notícias */
+.news-list {
+    margin-left: 270px;
+    padding: 20px;
+}
+.news-list-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.news-list-item img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+.news-text h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #222;
+}
+.news-text p {
+    font-size: 14px;
+    color: #555;
+}
