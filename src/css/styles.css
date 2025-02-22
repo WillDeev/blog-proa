@@ -20,19 +20,54 @@ body {
     left: 0;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+#sidebar img {
+    width: 80px; /* Ajuste o tamanho da logo */
+    margin-bottom: 10px;
+}
+
+#sidebar span {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
 #sidebar ul {
     list-style: none;
     padding: 0;
+    width: 100%;
 }
+
 #sidebar ul li {
-    margin: 15px 0;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
 }
+
 #sidebar ul li a {
+    display: block;
+    padding: 10px;
     text-decoration: none;
     color: #000;
     font-weight: bold;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    transition: 0.3s;
 }
+
+#sidebar ul li a:hover {
+    background-color: #ddd;
+}
+
+#sidebar ul li a.active {
+    background-color: #ccc;
+    color: #000;
+}
+
 
 /* Container principal para notícias */
 .container-noticias-principais {
@@ -251,12 +286,86 @@ article {
     font-size: 20px;
 }
 
+
+/* Estilizando os titulos*/
 article .exemplo-fotos {
     border-radius: 10px;
+}
+
+.umtituloimportante {
+    color: #bf1313;
+    font-size: 35px;
+}
+
+.titulodefalaimportante {
+    color: #bf1313;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.tecladogamer {
+    color: #bf1313;
+    font-size: 20px;
+}
+
+.lista {
+    margin-left: 50px;
+}
+
+.sublinhar {
+    font-style: italic;
+    font-weight: bold;
 }
 
 footer {
     margin-top: 50px;
     display: flex;
     justify-content: center;
+}
+
+/* Estilizando o item a venda */
+.produto {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+.produto img {
+    width: 300px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.info h2 a {
+    text-decoration: none;
+    color: #3888c9;
+    font-size: 18px;
+}
+
+.info h2 a:hover {
+    text-decoration: underline;
+}
+
+.info h2 a:hover {
+    text-decoration: underline;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #e68900;
 }
