@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
-
 /* Estilos Gerais */
 body {
     font-family: 'Poppins', sans-serif;
@@ -9,7 +7,7 @@ body {
     padding: 0;
 }
 
-/* Estilizando o Menu Lateral */
+/* Menu Lateral */
 #sidebar {
     background-color: #fff;
     color: #000;
@@ -26,7 +24,7 @@ body {
 }
 
 #sidebar img {
-    width: 80px; /* Ajuste o tamanho da logo */
+    width: 80px;    
     margin-bottom: 10px;
 }
 
@@ -260,6 +258,7 @@ hr {
     max-width: 900px;
     margin-top: 60px;
     font-size: 25px;
+    line-height: 1.2;
     font-weight: bold;
 }
 
