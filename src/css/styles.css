@@ -11,7 +11,9 @@ body {
 #sidebar {
     background-color: #fff;
     color: #000;
-    width: 250px;
+    width: 20vw;
+    max-width: 250px;
+    z-index: 1000;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -187,7 +189,7 @@ a {
 }
 
 .news-item-small img:hover {
-    opacity: 0.9; /* Deixa a imagem mais transparente ao passar o mouse */
+    opacity: 0.9;
 }
 
 .news-item-small p {
@@ -209,16 +211,19 @@ a {
 
 /* Seção Lista de Notícias */
 .news-list {
-    margin-left: 470px; /* Alinhando com as outras seções */
-    max-width: 900px; /* Mantém uma largura consistente */
+    margin-left: 470px;
+    max-width: 900px; 
     padding: 20px;
+    justify-content: center;
 }
+
 .news-list-item {
     display: flex;
     align-items: center;
     gap: 15px;
     margin-bottom: 20px;
 }
+
 .news-list-item img {
     width: 180px; /* Aumentando um pouco para melhor equilíbrio */
     height: auto;
@@ -235,6 +240,7 @@ a {
     font-size: 18px;
     color: #222;
 }
+
 .news-text p {
     font-size: 14px;
     color: #555;
@@ -319,7 +325,9 @@ article .exemplo-fotos {
 footer {
     margin-top: 50px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 /* Estilizando o item a venda */
@@ -367,4 +375,33 @@ footer {
 
 .botao:hover {
     background-color: #e68900;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px; /* Espaço entre os ícones e o texto */
+}
+
+.social .icone{
+    width: 30px;
+    filter: invert(#222);
+    transition: 0.3s ease-in-out;
+    display: flex;
+    gap: 10px; /* Espaço entre os ícones */
+    list-style: none;
+    padding: 0; display: flex;
+    gap: 10px; /* Espaço entre os ícones */
+    list-style: none;
+    padding: 0;
+}
+
+.social li {
+    display: flex;
+}
+
+.social .icone:hover{
+    transform: scale(1.2);
 }
